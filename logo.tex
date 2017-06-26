@@ -1,0 +1,17 @@
+\documentclass[png]{standalone}
+\usepackage{tikz}
+% https://help.github.com/articles/setting-your-profile-picture/
+% says the Github profile pic should be PNG, JPG, or GIF under 1MB
+% and about 500x500 pixels
+%
+% http://www.nyu.edu/content/dam/nyu/advertisePublications/documents/standards/Web_ReadyMadeColorPalettes.pdf
+% has several options
+\definecolor{Violet}{HTML}{57068C}
+\definecolor{CoolGray}{HTML}{e2e1dd}
+\begin{document}
+\begin{tikzpicture}
+    \fill[CoolGray] (-2,-2) rectangle (2,2);
+    \draw[line width=1cm, Violet] (-1.5cm,0) -- (1.5cm,0)
+        (0,-1.5cm) -- (0,1.5cm);
+\end{tikzpicture}
+\end{document}
